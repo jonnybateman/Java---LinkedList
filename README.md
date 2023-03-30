@@ -12,6 +12,6 @@ The syntax to define an instance of this custom linked list is:
 ## Methods
 
 |Method|Description|SLinkedList|DLinkedList|
-|------|-----------|-----------|-----------|
-|get() |Retrieve the value or object for a particular node|:Yes:|:Yes:|
+|------|-----------|:---------:|:---------:|
+|get()|Retrieve the value or object for a particular node|Yes|Yes|
    
