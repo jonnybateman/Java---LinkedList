@@ -7,6 +7,7 @@ This repository contains a java package for a linked list, a linear data structu
 The syntax to define an instance of this custom linked list is:
 
    *SLinkedList<data_type> list_name = new SlinkedList<>();   // for a single linked list*
+   
    *DLinkedList<data_type> list_name = new DlinkedList<>();   // for a double linked list*
    
 ## Methods
