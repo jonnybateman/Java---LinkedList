@@ -70,6 +70,7 @@ public interface IIterator<T> {
   default public T get() {
     return getCurr() == null ? null : getCurr().getObject();
   }
+
   /*
    * Set the data property of the current node. Checks that the current node has not been removed
    * prior to setting the data property.

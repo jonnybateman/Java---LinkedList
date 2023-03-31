@@ -144,32 +144,30 @@ public class DLinkedList<T> implements ILinkedList<T> {
 
     checkNodeIndexValid(idx);
     for (int i = 0; i <= idx; i++) {
-      if (currNode != null) {
-        if (idx == 0) {
-          // We are trying to remove the head of the list so set the new head of the list
-          // to the current head's 'next' node reference.
-          head = (DNode<T>) currNode.getNext();
-          head.setPrev(null);
-          currNode.setNext(null);
-        } else if (i == idx) {
-          // Reached the node we want to remove. Set the 'next' reference of the previous
-          // node to the 'next' reference of the current node and
-          prevNode.setNext(currNode.getNext());
+      if (idx == 0) {
+        // We are trying to remove the head of the list so set the new head of the list
+        // to the current head's 'next' node reference.
+        head = (DNode<T>) currNode.getNext();
+        head.setPrev(null);
+        currNode.setNext(null);
+      } else if (i == idx) {
+        // Reached the node we want to remove. Set the 'next' reference of the previous
+        // node to the 'next' reference of the current node and
+        prevNode.setNext(currNode.getNext());
 
-          if (currNode.getNext() == null) {
-            // The 'next' reference of the current node is null as it is the tail node, set
-            // the previous node to now act as the list's tail node.
-            tail = prevNode;
-          } else {
-            // Set the 'prev' reference of the next node to the reference of the previous
-            // Node.
-            ((DNode<T>) currNode.getNext()).setPrev(prevNode);
-            // Clear the current node's next reference.
-            currNode.setNext(null);
-          }
-          // Clear the current node's prev reference.
-          currNode.setPrev(null);
+        if (currNode.getNext() == null) {
+          // The 'next' reference of the current node is null as it is the tail node, set
+          // the previous node to now act as the list's tail node.
+          tail = prevNode;
+        } else {
+          // Set the 'prev' reference of the next node to the reference of the previous
+          // Node.
+          ((DNode<T>) currNode.getNext()).setPrev(prevNode);
+          // Clear the current node's next reference.
+          currNode.setNext(null);
         }
+        // Clear the current node's prev reference.
+        currNode.setPrev(null);
         prevNode = currNode;
         currNode = (DNode<T>) currNode.getNext();
       }
@@ -204,6 +202,7 @@ public class DLinkedList<T> implements ILinkedList<T> {
       tail = tail.getPrev();
       tail.setNext(null);
       oldTail.setPrev(null);
+      listSize--;
     }
     return data;
   }
