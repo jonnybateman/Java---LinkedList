@@ -17,8 +17,9 @@ The syntax to define an instance of Iterator for a list is as follows:
 &emsp;*IIterator<data_type> iterator_name = list_name.iterator(IteratorDirection.direction);   // for a double linked list*
   
 &emsp;&emsp;A Doubly Linked list can be iterated either forwards or backwards. Direction needs to be specified when initiating the iterator:
-*IteratorDirection.FORWARD
-*IteratorDirection.BACKWARDS
+
+&emsp;&emsp;*IteratorDirection.FORWARD
+&emsp;&emsp;*IteratorDirection.BACKWARDS
    
 ## Methods (Linked List)
 
