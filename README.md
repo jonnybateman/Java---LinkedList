@@ -39,4 +39,4 @@ The syntax to define an instance of Iterator for a list is as follows:
 
 |Method|Description|SlinkedList|DLinkedList|
 |------|-----------|-----------|-----------|
-|hasNext()|
+|hasNext()|Returns true if there is another node after the current node, or if we have not yet started to iterate through the list but at least one element/node exists.|Yes|Yes|
