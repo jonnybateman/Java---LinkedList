@@ -16,4 +16,9 @@ The syntax to define an instance of this custom linked list is:
 |------|-----------|:---------:|:---------:|
 |add(Object o)|Add node to end of list and assign object to it.|Yes|Yes|
 |add(Object o, int index)|Add node to list at specified index. Assign object to it.|Yes|Yes|
-   
+|remove(int index)|Remove node from list at specified index|Yes|Yes|
+|peek()|Returns the object stored in the first node of the list.|Yes|Yes|
+|peekTail()|Returns the object stored in the last node of the list.|Yes|Yes|
+|poll()|Returns the object stored in the first node of list and removes the node from list.|Yes|Yes|
+|pollTail()|Returns the object stored in the last node of the list and removes the node from the list|Yes|Yes|
+|iterator()|Return a ListIterator object for a particular list. Used to iterate through that list|Yes|Yes|
