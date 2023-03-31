@@ -5,7 +5,7 @@ This repository contains a java package for a linked list, a linear data structu
 ## Syntax
 The syntax to define an instance of this custom linked list is:
 
-&ensp;*SLinkedList<data_type> list_name = new SlinkedList<>();   // for a single linked list*  
+   *SLinkedList<data_type> list_name = new SlinkedList<>();   // for a single linked list*  
 &ensp;*DLinkedList<data_type> list_name = new DlinkedList<>();   // for a double linked list*
    
 The syntax to define an instance of Iterator for a list is as follows:
@@ -57,42 +57,60 @@ A linked list consists of nodes each of which stores a particular object item of
 
    Define a list and add elements to that list:  
    
-      *// Create a new list.*
-      *SLinkedList<String> list = new SLinkedist<>();*
-      *// Add elements to the list.*
-      *list.add("Hello");*
-      *list.add("World!");*
+      // Create a new list.
+      SLinkedList<String> list = new SLinkedist<>();
+      // Add elements to the list.
+      list.add("Hello");
+      list.add("World!");
    
    Define a list and add elements to the list that contain class objects:
    
-      *// Create a new list.*
-      *SlinkedList<Dog> list = new SLinkedList<>();*
-      *// Add elements to the list.*
-      *list.add(new Dog("Poodle"));*
-      *list.add(new Dog("Dalmation");*
-      *...*
+      // Create a new list.
+      SlinkedList<Dog> list = new SLinkedList<>();
+      // Add elements to the list.
+      list.add(new Dog("Poodle"));
+      list.add(new Dog("Dalmation");
+      ...
 
    Define a doubly linked list, add elements to that list and iterate through it:
    
-      *// Create a new list.*
-      *DLinkedList<String> list = new DLinkedList<>();*
-      *// Add elements to the list.*
-      *list.add("Hello");*
-      *list.add("World");*
-      *list.add("Example!");*
-      *// Define iterator to iterate forwards through the list.*
-      *IIterator<String> iter1 = list.iterator(IteratorDirection.FORWARDS);*
-      *// Iterate through the list.*
-      *while (iter1.hasNext()) {*
-      *  // Get the next or first node in the list.*
-      *  iter1.next();*
-      *  // Current node processing logic goes here...*
-      *  System.out.println(iter1.get());*
-      *}*
+      // Create a new list.
+      DLinkedList<String> list = new DLinkedList<>();
+      // Add elements to the list.
+      list.add("Hello");
+      list.add("World");
+      list.add("Example!");
+      // Define iterator to iterate forwards through the list.
+      IIterator<String> iter1 = list.iterator(IteratorDirection.FORWARDS);
+      // Iterate through the list.
+      while (iter1.hasNext()) {
+        // Get the next or first node in the list.
+        iter1.next();
+        // Current node processing logic goes here...
+        System.out.println(iter1.get());
+      }
    
-   Output:
-   
+      Output:
+      -------
       Hello
       World
       Example!
       
+   Iterate through a doubly linked list backwards:
+   
+      ...
+      // Define iterator to iterate backwards through the list.
+      IIterator<String> iter2 = list.iterator(IteratorDirection.BACKWARDS);
+      // Iterate through the list.
+      while (iter2.hasPrev()) {
+        // Get the previous or last node in the list.
+        iter2.prev();
+        // Current node processing logic goes here...
+        System.out.println(iter2.get());
+      }
+      
+      Output:
+      -------
+      Example!
+      World
+      Hello
