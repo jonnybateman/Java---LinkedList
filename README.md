@@ -17,6 +17,10 @@ The syntax to define an instance of Iterator for a list is as follows:
 
    - IteratorDirection.FORWARD  
    - IteratorDirection.BACKWARDS
+
+##Nodes
+
+A linked list consists of nodes each of which stores a particular object item of the same data type that was defined when the list was initiated.
    
 ## Methods (Linked List)
 
@@ -38,5 +42,57 @@ The syntax to define an instance of Iterator for a list is as follows:
 ## Methods (Iterator)
 
 |Method|Description|SlinkedList|DLinkedList|
-|------|-----------|-----------|-----------|
+|------|-----------|:---------:|:---------:|
 |hasNext()|Returns true if there is another node after the current node, or if we have not yet started to iterate through the list but at least one element/node exists.|Yes|Yes|
+|hasPrev()|Returns true if there is another node before the current node, or if we have not yet started to iterate backwards through the list but at least one element/node exits.|No|Yes|
+|next()|Iterate to the next element/node in the list. Must be called for each iteration.|Yes|Yes|
+|prev()|Iterate to the previous element/node in the list. Must be called for each iteration.|No|Yes|
+|get()|Returns the object stored in the current element/node.|Yes|Yes|
+|remove()|Remove the current element/node from the list.|Yes|Yes|
+|addBefore(Object o)|Add a new element/node to the list immediately before the current node. Will store the object argument in the new node.|Yes|Yes|
+|addAfter(Object o)|Add a new element/node to the list immediately after the current node. Will store the object argument in the new node.|Yes|Yes|
+|set(Object o)|Stores the argument object in the current element/node.|Yes|Yes|
+
+##Examples
+
+   Define a list and add elements to that list:
+   
+      *// Create a new list.*
+      *SLinkedList<String> list = new SLinkedist<>();*
+      *// Add elements to the list.*
+      *list.add("Hello");*
+      *list.add("World!");*
+   
+   Define a list and add elements to the list that contain class objects:
+   
+      *// Create a new list.*
+      *SlinkedList<Dog> list = new SLinkedList<>();*
+      *// Add elements to the list.*
+      *list.add(new Dog("Poodle"));*
+      *list.add(new Dog("Dalmation");*
+      *...*
+
+   Define a doubly linked list, add elements to that list and iterate through it:
+   
+      *// Create a new list.*
+      *DLinkedList<String> list = new DLinkedList<>();*
+      *// Add elements to the list.*
+      *list.add("Hello");*
+      *list.add("World");*
+      *list.add("Example!");*
+      *// Define iterator to iterate forwards through the list.*
+      *IIterator<String> iter1 = list.iterator(IteratorDirection.FORWARDS);*
+      *// Iterate through the list.*
+      *while (iter1.hasNext()) {*
+      *  // Get the next or first node in the list.*
+      *  iter1.next();*
+      *  // Current node processing logic goes here...*
+      *  System.out.println(iter1.get());*
+      *}*
+   
+   Output:
+   
+      Hello
+      World
+      Example!
+      
