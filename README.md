@@ -34,7 +34,7 @@ A linked list consists of nodes each of which stores a particular object item of
 |peek()|Returns the object stored in the first node of the list.|Yes|Yes|
 |peekTail()|Returns the object stored in the last node of the list.|Yes|Yes|
 |poll()|Returns the object stored in the first node of list and removes the node from list.|Yes|Yes|
-|pollTail()|Returns the object stored in the last node of the list and removes the node from the list|Yes|Yes|
+|pollTail()|Returns the object stored in the last node of the list and removes the node from the list|No|Yes|
 |indexOf(Object o)|Return the index of element/node that contains the specified object.|Yes|Yes|
 |contains(Object o)|Returns true if list contains the specified object.|Yes|Yes|
 |iterator()|Return a ListIterator object for a particular list. Used to iterate through that list|Yes|Yes|
