@@ -6,12 +6,12 @@ This repository contains a java package for a linked list, a linear data structu
 The syntax to define an instance of this custom linked list is:
 
    *SLinkedList<data_type> list_name = new SlinkedList<>();   // for a single linked list*  
-&ensp;*DLinkedList<data_type> list_name = new DlinkedList<>();   // for a double linked list*
+&emsp;*DLinkedList<data_type> list_name = new DlinkedList<>();   // for a double linked list*
    
 The syntax to define an instance of Iterator for a list is as follows:
 
-&ensp;*IIterator<data_type> iterator_name = list_name.iterator();   // for a single linked list*  
-&ensp;*IIterator<data_type> iterator_name = list_name.iterator(IteratorDirection.direction);   // for a double linked list*
+&emsp;*IIterator<data_type> iterator_name = list_name.iterator();   // for a single linked list*  
+&emsp;*IIterator<data_type> iterator_name = list_name.iterator(IteratorDirection.direction);   // for a double linked list*
   
 &ensp;A Doubly Linked list can be iterated either forwards or backwards. Direction needs to be specified when initiating the iterator:
 
