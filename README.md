@@ -10,10 +10,22 @@ The syntax to define an instance of this custom linked list is:
    
    *DLinkedList<data_type> list_name = new DlinkedList<>();   // for a double linked list*
    
+The syntax to define an instance of Iterator for a list is as follows:
+
+  *IIterator<data_type> iterator_name = list_name.iterator();   // for a single linked list*
+  
+  *IIterator<data_type> iterator_name = list_name.iterator(IteratorDirection.direction);   // for a double linked list*
+  
+    A Doubly Linked list can be iterated either forwards or backwards. Direction needs to be specified when initiating the iterator:
+      *IteratorDirection.FORWARD
+      *IteratorDirection.BACKWARDS
+   
 ## Methods (Linked List)
 
 |Method|Description|SLinkedList|DLinkedList|
 |------|-----------|:---------:|:---------:|
+|isEmpty()|Returns a boolean, true if list is empty, false if not.|Yes|Yes|
+|size()|Return number of elements/nodes in list.|Yes|Yes|
 |add(Object o)|Add node to end of list and assign object to it.|Yes|Yes|
 |add(Object o, int index)|Add node to list at specified index. Assign object to it.|Yes|Yes|
 |remove(int index)|Remove node from list at specified index|Yes|Yes|
@@ -21,4 +33,12 @@ The syntax to define an instance of this custom linked list is:
 |peekTail()|Returns the object stored in the last node of the list.|Yes|Yes|
 |poll()|Returns the object stored in the first node of list and removes the node from list.|Yes|Yes|
 |pollTail()|Returns the object stored in the last node of the list and removes the node from the list|Yes|Yes|
+|indexOf(Object o)|Return the index of element/node that contains the specified object.|Yes|Yes|
+|contains(Object o)|Returns true if list contains the specified object.|Yes|Yes|
 |iterator()|Return a ListIterator object for a particular list. Used to iterate through that list|Yes|Yes|
+
+## Methods (Iterator)
+
+|Method|Description|SlinkedList|DLinkedList|
+|------|-----------|-----------|-----------|
+|hasNext()|
