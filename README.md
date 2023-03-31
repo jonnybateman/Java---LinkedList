@@ -10,9 +10,10 @@ The syntax to define an instance of this custom linked list is:
    
    *DLinkedList<data_type> list_name = new DlinkedList<>();   // for a double linked list*
    
-## Methods
+## Methods (Linked List)
 
 |Method|Description|SLinkedList|DLinkedList|
 |------|-----------|:---------:|:---------:|
-|get()|Retrieve the value or object for a particular node|Yes|Yes|
+|add(Object o)|Add node to end of list and assign object to it.|Yes|Yes|
+|add(Object o, int index)|Add node to list at specified index. Assign object to it.|Yes|Yes|
    
