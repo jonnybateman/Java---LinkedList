@@ -18,7 +18,7 @@ The syntax to define an instance of Iterator for a list is as follows:
    - IteratorDirection.FORWARD  
    - IteratorDirection.BACKWARDS
 
-##Nodes
+## Nodes
 
 A linked list consists of nodes each of which stores a particular object item of the same data type that was defined when the list was initiated.
    
@@ -53,9 +53,9 @@ A linked list consists of nodes each of which stores a particular object item of
 |addAfter(Object o)|Add a new element/node to the list immediately after the current node. Will store the object argument in the new node.|Yes|Yes|
 |set(Object o)|Stores the argument object in the current element/node.|Yes|Yes|
 
-##Examples
+## Examples
 
-   Define a list and add elements to that list:
+   Define a list and add elements to that list:  
    
       *// Create a new list.*
       *SLinkedList<String> list = new SLinkedist<>();*
