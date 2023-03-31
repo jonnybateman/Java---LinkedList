@@ -45,8 +45,8 @@ A linked list consists of nodes each of which stores a particular object item of
 |------|-----------|:---------:|:---------:|
 |hasNext()|Returns true if there is another node after the current node, or if we have not yet started to iterate through the list but at least one element/node exists.|Yes|Yes|
 |hasPrev()|Returns true if there is another node before the current node, or if we have not yet started to iterate backwards through the list but at least one element/node exits.|No|Yes|
-|next()|Iterate to the next element/node in the list. Must be called for each iteration.|Yes|Yes|
-|prev()|Iterate to the previous element/node in the list. Must be called for each iteration.|No|Yes|
+|next()|Iterate to the next or first element/node in the list. Must be called for each iteration.|Yes|Yes|
+|prev()|Iterate to the previous or last element/node in the list. Must be called for each iteration.|No|Yes|
 |get()|Returns the object stored in the current element/node.|Yes|Yes|
 |remove()|Remove the current element/node from the list.|Yes|Yes|
 |addBefore(Object o)|Add a new element/node to the list immediately before the current node. Will store the object argument in the new node.|Yes|Yes|
