@@ -57,14 +57,19 @@ A linked list consists of nodes each of which stores a particular object item of
 
    Define a list and add elements to that list:  
    
+      import com.cqueltech.linkedlist.SLinkedList;
+      ...
       // Create a new list.
       SLinkedList<String> list = new SLinkedist<>();
       // Add elements to the list.
       list.add("Hello");
       list.add("World!");
+      ...
    
    Define a list and add elements to the list that contain class objects:
    
+      import com.cqueltech.linkedlist.SLinkedList;
+      ...
       // Create a new list.
       SlinkedList<Dog> list = new SLinkedList<>();
       // Add elements to the list.
@@ -74,6 +79,10 @@ A linked list consists of nodes each of which stores a particular object item of
 
    Define a doubly linked list, add elements to that list and iterate through it:
    
+      import com.cqueltech.linkedlist.DLinkedList;
+      import com.cqueltech.linkedlist.IIterator;
+      import com.cqueltech.linkedlist.IIterator.IteratorDirection;
+      ...
       // Create a new list.
       DLinkedList<String> list = new DLinkedList<>();
       // Add elements to the list.
@@ -89,6 +98,7 @@ A linked list consists of nodes each of which stores a particular object item of
         // Current node processing logic goes here...
         System.out.println(iter1.get());
       }
+      ...
    
       Output:
       -------
@@ -98,6 +108,9 @@ A linked list consists of nodes each of which stores a particular object item of
       
    Iterate through a doubly linked list backwards:
    
+      import com.cqueltech.linkedlist.DLinkedList;
+      import com.cqueltech.linkedlist.IIterator;
+      import com.cqueltech.linkedlist.IIterator.IteratorDirection;
       ...
       // Define iterator to iterate backwards through the list.
       IIterator<String> iter2 = list.iterator(IteratorDirection.BACKWARDS);
@@ -108,6 +121,7 @@ A linked list consists of nodes each of which stores a particular object item of
         // Current node processing logic goes here...
         System.out.println(iter2.get());
       }
+      ...
       
       Output:
       -------
