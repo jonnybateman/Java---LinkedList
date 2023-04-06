@@ -8,6 +8,8 @@ package com.cqueltech.linkedlist;
  * @param   object : of type 'Object', item to be stored within the node.
  * @param   next : of type 'Node', a reference/pointer to the next node in the list
  * 
+ * @author  Jonathan Bateman
+ * @version 1.0.1
  */
 class SNode<T> {
   private T object;

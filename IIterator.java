@@ -5,7 +5,7 @@ package com.cqueltech.linkedlist;
  * iterating through a Linked List.
  * 
  * @author  Jonathan Bateman
- * @version 1.0
+ * @version 1.0.1
  */
 public interface IIterator<T> {
 

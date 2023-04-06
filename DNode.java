@@ -7,6 +7,9 @@ package com.cqueltech.linkedlist;
  * list.
  * 
  * @param   prev : of type 'Node', a reference pointer to previous node in the list
+ * 
+ * @author  Jonathan Bateman
+ * @version 1.0.1
  */
 public class DNode<T> extends SNode<T> {
   
