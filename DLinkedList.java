@@ -14,9 +14,11 @@ package com.cqueltech.linkedlist;
  *    remove(int idx) : Remove an element from the list at the specified index.
  *    poll() : Retrieves and removes the head (first element) of this list.
  *    pollTail() : Retrieves and removes the tail (last element) of this list.
+ *    iterator() : Return a ListIterator object to alow us to iterate through a list and
+ *                 manipulate the nodes it contains.
  *
  * @author  Jonathan Bateman
- * @version 1.0
+ * @version 1.0.1
  */
 public class DLinkedList<T> implements ILinkedList<T> {
 
