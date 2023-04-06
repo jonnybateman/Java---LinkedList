@@ -4,7 +4,7 @@ package com.cqueltech.linkedlist;
  * Interface describing the implementations for custom linked list class CqueltechLinkedList
  * 
  * @author  Jonathan Bateman
- * @version 1.0
+ * @version 1.0.1
  */
 public interface ILinkedList<T> {
 
